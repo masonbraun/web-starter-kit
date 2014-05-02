@@ -1,3 +1,15 @@
+//sprite sheet includes
+
+@import "../img/simpsons/*.png";
+
+@include all-simpsons-sprites;
+
+//clearfix extend
+
+%clearfix {
+  @include pie-clearfix;
+}
+
 body {
     color: #fff;
 }
@@ -5,5 +17,10 @@ body {
 .simple { @include border-radius(4px, 4px); }
 
 .butt {
-    @include clearfix;
+    @extend %clearfix;
 }
+
+.test {
+    @extend %clearfix;
+}
+

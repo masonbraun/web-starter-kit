@@ -9,7 +9,8 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: 'css/sass',
                     cssDir: 'css',
-                    outputStyle: 'compressed',
+                    imagesDir: 'img',
+                    outputStyle: 'nested',
                     cacheDir: 'css/sass/.sass-cache/'
                 }
             }

@@ -2,19 +2,11 @@
   "name": "masonbraun-boilerplate",
   "version": "1.0.0",
   "description": "default HTML boilerplate for my projects",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:masonbraun/html-boilerplate.git"
   },
-  "keywords": [
-    "boilerplate"
-  ],
   "author": "Mason Braun",
-  "license": "ISC",
   "devDependencies": {
     "grunt-contrib-compass": "^0.7.2",
     "grunt-contrib-watch": "^0.6.1"
