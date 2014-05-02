@@ -1,0 +1,9 @@
+body {
+    color: #fff;
+}
+
+.simple { @include border-radius(4px, 4px); }
+
+.butt {
+    @include clearfix;
+}
