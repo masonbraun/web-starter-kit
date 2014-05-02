@@ -2,22 +2,34 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
+
         pkg: grunt.file.readJSON('package.json'),
-        uglify: {
-          options: {
-            banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+
+        compass: {                  // Task
+            dist: {                   // Target
+              options: {              // Target options
+                sassDir: 'css/sass',
+                cssDir: 'css',
+                outputStyle: 'compressed',
+                cacheDir: 'css/sass/.sass-cache/'
+                }
+            }
           },
-          build: {
-            src: 'src/<%= pkg.name %>.js',
-            dest: 'build/<%= pkg.name %>.min.js'
-          }
+
+        watch: {
+            css: {
+                files: '**/*.scss',
+                tasks: ['compass:dist']
+            }
         }
     });
 
     // Load the plugin that provides the "uglify" task.
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['watch']);
 
 };

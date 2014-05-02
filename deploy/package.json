@@ -14,5 +14,9 @@
     "boilerplate"
   ],
   "author": "Mason Braun",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }
