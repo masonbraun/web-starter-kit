@@ -4,18 +4,20 @@
 
 @include all-simpsons-sprites;
 
-//clearfix extend
+//change the box model to make sense
+* {
+    @include box-sizing(border-box);
+}
 
+//clearfix extend
 %clearfix {
   @include pie-clearfix;
 }
 
 //fr language prefix
-
 $fr: 'html[lang="fr"]';
 
 //variables
-
 $butt: red;
 $var: money;
 
@@ -62,10 +64,20 @@ p {
 
 .block {
     color: $butt;
+    @include inline-block;
 
     #{$fr} & {
         color: black;
     }
+}
+
+.font {
+    font: {
+        size: 12px;
+        family: Arial;
+        weight: bold;
+    }
+    @extend %clearfix;
 }
 
 

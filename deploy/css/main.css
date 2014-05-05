@@ -1805,52 +1805,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .simpsons-marge {
   background-position: 0 -500px; }
 
-/* line 9, sass/_site.scss */
-.butt, .test {
+/* line 8, sass/_site.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, sass/_site.scss */
+.butt, .test, .font {
   *zoom: 1; }
   /* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .butt:after, .test:after {
+  .butt:after, .test:after, .font:after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 23, sass/_site.scss */
+/* line 25, sass/_site.scss */
 body {
   background-color: blue; }
-  /* line 26, sass/_site.scss */
+  /* line 28, sass/_site.scss */
   html[lang="fr"] body {
     background-color: red; }
 
-/* line 31, sass/_site.scss */
+/* line 33, sass/_site.scss */
 a[target=_blank] {
   background-color: yellow; }
 
-/* line 35, sass/_site.scss */
+/* line 37, sass/_site.scss */
 .simple {
   -webkit-border-radius: 4px 4px;
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px; }
 
-/* line 41, sass/_site.scss */
+/* line 43, sass/_site.scss */
 .test {
   color: purple; }
 
-/* line 46, sass/_site.scss */
+/* line 48, sass/_site.scss */
 .hello {
   text-align: center;
   border: solid 1px #fff; }
 
-/* line 55, sass/_site.scss */
+/* line 57, sass/_site.scss */
 .mason {
   color: red; }
 
-/* line 59, sass/_site.scss */
+/* line 61, sass/_site.scss */
 .red-world {
   text-align: center; }
 
-/* line 63, sass/_site.scss */
+/* line 65, sass/_site.scss */
 .block {
-  color: red; }
-  /* line 66, sass/_site.scss */
+  color: red;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline; }
+  /* line 69, sass/_site.scss */
   html[lang="fr"] .block {
     color: black; }
+
+/* line 74, sass/_site.scss */
+.font {
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: bold; }
