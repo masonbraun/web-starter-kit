@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                     sassDir: 'css/sass',
                     cssDir: 'css',
                     imagesDir: 'img',
-                    outputStyle: 'compressed',
+                    outputStyle: 'nested',
                     cacheDir: 'css/sass/.sass-cache/'
                 }
             }

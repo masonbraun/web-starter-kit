@@ -10,8 +10,26 @@
   @include pie-clearfix;
 }
 
+//fr language prefix
+
+$fr: 'html[lang="fr"]';
+
+//variables
+
+$butt: red;
+$var: money;
+
+
 body {
-    color: #000;
+    background-color: blue;
+
+    #{$fr} & {
+        background-color: red;
+    }
+}
+
+a[target=_blank] {
+background-color:yellow;
 }
 
 .simple { @include border-radius(4px, 4px); }
@@ -29,4 +47,25 @@ body {
     text-align: center;
     border: solid 1px #fff;
 }
+
+p {
+    @extend .fa;
+}
+
+.mason {
+    color: $butt;
+}
+
+.#{$butt}-world {
+    text-align: center;
+}
+
+.block {
+    color: $butt;
+
+    #{$fr} & {
+        color: black;
+    }
+}
+
 
