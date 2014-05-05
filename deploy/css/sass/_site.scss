@@ -11,7 +11,7 @@
 }
 
 body {
-    color: #fff;
+    color: #000;
 }
 
 .simple { @include border-radius(4px, 4px); }
@@ -22,5 +22,11 @@ body {
 
 .test {
     @extend %clearfix;
+    color: purple;
+}
+
+.hello {
+    text-align: center;
+    border: solid 1px #fff;
 }
 

@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                     sassDir: 'css/sass',
                     cssDir: 'css',
                     imagesDir: 'img',
-                    outputStyle: 'nested',
+                    outputStyle: 'compressed',
                     cacheDir: 'css/sass/.sass-cache/'
                 }
             }
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 
         watch: {
             css: {
-                files: '**/*.scss',
+                files: 'css/sass/*.scss',
                 tasks: ['compass:dist']
             }
         }
