@@ -1,8 +1,8 @@
 //sprite sheet includes
 
-@import "../img/simpsons/*.png";
+// @import "../img/simpsons/*.png";
 
-@include all-simpsons-sprites;
+// @include all-simpsons-sprites;
 
 //change the box model to make sense
 * {
@@ -31,7 +31,11 @@ body {
 }
 
 a[target=_blank] {
-background-color:yellow;
+    background-color:yellow;
+}
+
+header[role="banner"] {
+
 }
 
 .simple { @include border-radius(4px, 4px); }
