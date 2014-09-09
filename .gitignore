@@ -1,4 +1,4 @@
 .DS_Store
 design/
-deploy/node_modules/
-deploy/css/sass/.sass-cache
+node_modules/
+.sass-cache/

@@ -1,0 +1,16 @@
+{
+  "name": "web-starter-kit",
+  "version": "1.0.0",
+  "description": "default web starter kit",
+  "author": "Mason Braun",
+  "devDependencies": {
+    "gulp": "~3.8.8",
+    "gulp-compass": "^1.1.9",
+    "gulp-watch": "^0.6.8",
+    "gulp-notify": "^1.4.0",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-ignore": "^1.2.0",
+    "gulp-cache": "^0.2.0"
+  }
+}
