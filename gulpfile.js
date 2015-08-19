@@ -1,37 +1,24 @@
-var config = {
-    dirs: {
-        src    : "./app/",
-        images : "img",
-        css    : "css",
-        scss   : "scss",
-        js     : "js"
-    }
-};
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
 
-var gulp     = require('gulp');
-var compass  = require('gulp-compass');
-var watch    = require('gulp-watch');
-var notify   = require("gulp-notify");
-var imagemin = require("gulp-imagemin");
-var clean    = require('gulp-clean');
-var ignore   = require('gulp-ignore');
-var cache    = require('gulp-cache');
+// Static Server + watching scss/html files
+gulp.task('serve', ['sass'], function() {
 
-gulp.task('default', function() {
-  // place code for your default task here
+    browserSync.init({
+        proxy: "webstarterkit.dev"
+    });
+
+    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('styles', function() {
-    return gulp.src([config.dirs.src + 'scss/*.scss'])
-        .pipe(compass({
-            css   : config.dirs.src + 'css',
-            sass  : config.dirs.src + 'scss',
-            image : config.dirs.src + 'img'
-        }))
-        .pipe(gulp.dest(config.dirs.src + 'css'))
-        .pipe(notify({ message: 'Styles task complete' }));
+// Compile sass into CSS & auto-inject into browsers
+gulp.task('sass', function() {
+    return gulp.src("app/scss/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("app/css"))
+        .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function() {
-    gulp.watch([config.dirs.src + '*.scss', config.dirs.src + '**/*.scss'], ['styles']);
-});
+gulp.task('default', ['serve']);
