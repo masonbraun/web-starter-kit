@@ -1,2 +1,9 @@
 body {
-  background-color: yellow; }
+  background-color: red;
+  color: blue; }
+  body header {
+    color: black; }
+    .test body header {
+      color: red; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxJQUFJLENBQUM7RUFDRCxnQkFBZ0IsRUFBRSxHQUFJO0VBQ3RCLEtBQUssRUFBRSxJQUFLLEdBRlY7RUFJRixJQUFJLENBQUMsTUFBTSxDQUFKO0lBQ0gsS0FBSyxFQUFFLEtBQU0sR0FEVDtJQUdFLEtBQUssQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFmO01BQ0osS0FBSyxFQUFFLEdBQUksR0FETiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbiAgICBjb2xvcjogYmx1ZTtcblxuICAgIGhlYWRlciB7XG4gICAgICAgIGNvbG9yOiBibGFjaztcblxuICAgICAgICAudGVzdCAmIHtcbiAgICAgICAgICAgIGNvbG9yOiByZWQ7XG4gICAgICAgIH1cbiAgICB9XG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

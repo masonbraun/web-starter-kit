@@ -1,3 +1,12 @@
 body {
-    background-color: yellow;
+    background-color: red;
+    color: blue;
+
+    header {
+        color: black;
+
+        .test & {
+            color: red;
+        }
+    }
 }
