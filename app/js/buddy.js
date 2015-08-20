@@ -1,4 +1,4 @@
 module.exports = function (s) {
-    alert("buddy");
+    console("buddy");
     // return s.toUpperCase() + '!'
 };

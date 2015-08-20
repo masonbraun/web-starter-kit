@@ -1,0 +1,9 @@
+body {
+  background-color: purple;
+  color: blue; }
+  body header {
+    color: black; }
+    .test body header {
+      color: red; }
+
+/*# sourceMappingURL=main.css.map */

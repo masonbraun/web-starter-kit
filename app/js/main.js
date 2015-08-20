@@ -3,7 +3,9 @@ var buddy = require('./buddy.js');
 
 $('.haters').fadeOut();
 
-console.log("test");
+console.log("gulp stest");
+
+console.log("it works again");
 
 // console.log(buddy("mason"));
 
