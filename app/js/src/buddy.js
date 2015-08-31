@@ -1,4 +1,5 @@
 module.exports = function (s) {
-    console("buddy");
+    console.log("BIG PARTY");
+    // alert("compiled");
     // return s.toUpperCase() + '!'
 };

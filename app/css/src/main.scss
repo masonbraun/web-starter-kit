@@ -1,0 +1,20 @@
+@import "reset.scss";
+
+body {
+    background-color: blue;
+    color: blue;
+    border-radius: 10px;
+    display: flex;
+    font-family: Droid Sans;
+
+    header {
+        color: brown;
+        display: flex;
+
+        .test & {
+            color: red;
+            display: flex;
+            color: red;
+        }
+    }
+}

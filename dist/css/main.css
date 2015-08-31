@@ -1,9 +1,19 @@
 body {
-  background-color: purple;
-  color: blue; }
+  background-color: yellow;
+  color: blue;
+  border-radius: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   body header {
-    color: black; }
+    color: black;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
     .test body header {
-      color: red; }
+      color: red;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
 
 /*# sourceMappingURL=main.css.map */
